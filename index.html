@@ -48,8 +48,8 @@
     }
 
     @keyframes bounce {
-      0%   { transform: translateY(0); }
-      50%  { transform: translateY(10px); }
+      0% { transform: translateY(0); }
+      50% { transform: translateY(10px); }
       100% { transform: translateY(0); }
     }
 
@@ -83,6 +83,17 @@
       box-shadow: 0 6px 15px rgba(0,0,0,0.08);
       text-align: center;
       font-size: 0.95rem;
+    }
+
+    /* ===== Skills link（追加） ===== */
+    .skills li a {
+      display: block;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .skills li a:hover {
+      color: var(--accent);
     }
 
     /* ===== Works ===== */
@@ -139,7 +150,12 @@
   <section class="section skills" id="skills">
     <h2>学習テーマ</h2>
     <ul>
-      <li>HTML / CSS<br>Webページの構造・デザイン</li>
+      <li>
+        <a href="html-css.html">
+          HTML / CSS<br>
+          Webページの構造・デザイン
+        </a>
+      </li>
       <li>JavaScript<br>簡単な動き・処理等</li>
       <li>Python<br>文法・プログラム</li>
     </ul>
@@ -158,7 +174,11 @@
       <p><a href="https://mentrecording.jp/snowman/">→ Snow Man 特設サイト</a></p>
 
       <h4>最近の一押し</h4>
-      <iframe width="1504" height="647" src="https://www.youtube.com/embed/TPbZ3IQZ-68" title="Snow Man &#39;STARS&#39; Music Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe
+        src="https://www.youtube.com/embed/TPbZ3IQZ-68"
+        title="Snow Man STARS Music Video"
+        allowfullscreen>
+      </iframe>
     </div>
   </section>
 
