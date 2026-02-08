@@ -70,7 +70,7 @@
       box-shadow: 0 8px 20px rgba(0,0,0,0.12);
       font-weight: 600;
 
-      color: #333; /* ← 追加：文字色（重要だった） */
+      color: #ec4899; /* ← 文字をピンクに */
 
       animation: fadeSpeech 1s ease;
     }
@@ -154,14 +154,8 @@
     }
 
     @keyframes slideUp {
-      from {
-        transform: translateY(20px);
-        opacity: 0;
-      }
-      to {
-        transform: translateY(0);
-        opacity: 1;
-      }
+      from { transform: translateY(20px); opacity: 0; }
+      to   { transform: translateY(0); opacity: 1; }
     }
 
     @keyframes float {
@@ -171,14 +165,8 @@
     }
 
     @keyframes fadeSpeech {
-      from {
-        opacity: 0;
-        transform: translateX(-20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
+      from { opacity: 0; transform: translateX(-20px); }
+      to   { opacity: 1; transform: translateX(0); }
     }
   </style>
 </head>
@@ -215,7 +203,7 @@
     <div class="card">
       <p>
         情報が見やすくなるよう、余白や文字サイズを意識しました。
-        また、CSSを使ってデザインに統一感を持たせることを心がけました。
+        CSSを使ってデザインに統一感を持たせることを心がけました。
       </p>
     </div>
   </section>
