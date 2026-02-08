@@ -69,10 +69,12 @@
       border-radius: 12px;
       box-shadow: 0 8px 20px rgba(0,0,0,0.12);
       font-weight: 600;
-
-      color: #ec4899; /* ← 文字をピンクに */
-
       animation: fadeSpeech 1s ease;
+    }
+
+    /* 修正点：文字に色を指定する */
+    .speech span {
+      color: #ec4899;
     }
 
     .speech::before {
@@ -181,7 +183,7 @@
         <div class="face">🙂</div>
       </div>
       <div class="speech">
-        HTML / CSS を学習中！
+        <span>HTML / CSS を学習中！</span>
       </div>
     </div>
   </header>
