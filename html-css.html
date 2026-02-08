@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML / CSS 学習内容</title>
+
+  <style>
+    :root {
+      --accent: #2563eb;
+    }
+
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background: #f7f7f7;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    /* ===== Header ===== */
+    header {
+      background: linear-gradient(135deg, #1f2937, #2563eb);
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+
+    header p {
+      margin-top: 10px;
+      opacity: 0.9;
+    }
+
+    /* ===== Section ===== */
+    .section {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      border-left: 6px solid var(--accent);
+      padding-left: 12px;
+      margin-bottom: 20px;
+      font-size: 1.4rem;
+    }
+
+    .card {
+      background: #fff;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    /* ===== Button ===== */
+    .back {
+      text-align: center;
+      margin: 60px 0;
+    }
+
+    .back a {
+      display: inline-block;
+      padding: 12px 24px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 999px;
+      font-weight: 600;
+    }
+
+    .back a:hover {
+      opacity: 0.85;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>HTML / CSS</h1>
+    <p>Webページの構造とデザインの基礎</p>
+  </header>
+
+  <section class="section">
+    <h2>学習内容について</h2>
+    <div class="card">
+      <ul>
+        <li>HTMLの基本構造（html / head / body）</li>
+        <li>見出し・段落・画像・リンクの使い方</li>
+        <li>CSSによる文字サイズ・色・余白の調整</li>
+        <li>主にweb開発1の内容を反映</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>意識したこと</h2>
+    <div class="card">
+      <p>
+        情報の視認性を意識して余白や文字サイズを変更。
+        また、CSSを使ってデザインを統一感をさせた。
+      </p>
+      <p>
+        外観と、HTMLの構造が分かりやすくなるように
+        セクションを分けた。
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>今後の課題</h2>
+    <div class="card">
+      <ul>
+        <li>デザインの読み込み・学習</li>
+        <li>アニメの活用</li>
+        <li>JavaScriptと組み合わせた表現</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="back">
+    <a href="index.html">← ポートフォリオに戻る</a>
+  </div>
+
+  <footer>
+    © 2025 My Portfolio
+  </footer>
+</body>
+</html>
